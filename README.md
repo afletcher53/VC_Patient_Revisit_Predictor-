@@ -23,6 +23,20 @@ A CNN, LSTM, Bilateral LSTM and Stacked Bidirectional LSTM are trained within th
 Glove Embedding is used.  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Getting Started
+
+There are multiple steps for the project to work. It requires access to VetCompass data, which is not publically available. 
+
+### Explanation of files
+
+#### constants.py
+
+All constants used throughout the project. 
+
+#### data_formatter.ipynb
+
+Formats the data from the source to a pandas dataframe which is useable within the project, produces pickles of a test, training and validation dataset. 
+
 
 
 ## Built With
@@ -45,7 +59,7 @@ Project Link: [https://github.com/afletcher53/VC_Patient_Visit_Classifier](https
 
 ## References
 
-<Coming Soon>
+Coming Soon
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
