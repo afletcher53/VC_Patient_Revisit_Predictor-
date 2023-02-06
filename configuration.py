@@ -76,5 +76,6 @@ class FilePaths:
         return os.path.join(self.UPDATED_DATA_DIR, "secondary_problem_level_annotations_v1.csv")
 
     def _REARRANGED_DATA(self) -> str:
-        return os.path.join("/home/aaron/timeseries_visit_predictor/", "rearranged_data.csv")
+        
+        return os.path.join(self.UPDATED_DATA_DIR, "rearranged_data.csv")
 
