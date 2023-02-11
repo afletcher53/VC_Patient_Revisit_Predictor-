@@ -45,7 +45,7 @@ class Config:
        'VetCompassSpecies', 'FirstVersionDate', 'LatestPatientVersionDate',
        'FirstNoteDate', 'LastNoteDate', 'FirstClinicId', 'SourceClinicName',"DateTimeDay", "DateTimeSeconds","DocumentDate",
  'IsArchived']
-
+    verbose: bool = True
 
 import os
 
