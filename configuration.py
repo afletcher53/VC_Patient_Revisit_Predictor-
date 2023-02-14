@@ -59,6 +59,19 @@ class FilePaths:
         self.PATIENT_LEVEL_DATA = self._PATIENT_LEVEL_DATA()
         self.PROBLEM_LEVEL_DATA = self._PROBLEM_LEVEL_DATA()
         self.REARRANGED_DATA = self._REARRANGED_DATA()
+        self.SAVED_DATA = self._SAVED_DATA()
+        self.EHR_STREAM = self._EHR_STREAM()
+        self.TARGET_VALUES = self._TARGET_VALUES()
+        self.X_TRAIN = self._X_TRAIN()
+        self.X_TEST = self._X_TEST()
+        self.Y_TRAIN = self._Y_TRAIN()
+        self.Y_TEST = self._Y_TEST()
+        self.X_VAL = self._X_VAL()
+        self.Y_VAL = self._Y_VAL()
+        self.FILE_TO_GLOVE = self._FILE_TO_GLOVE()
+
+    def _SAVED_DATA(self) -> str:
+        return os.path.join(self.UPDATED_DATA_DIR, "saved_data.csv")
 
     def _DATA_DIR(self) -> str:
         return "/home/aaron/aaron_data/"
@@ -75,7 +88,33 @@ class FilePaths:
     def _PROBLEM_LEVEL_DATA(self) -> str:
         return os.path.join(self.UPDATED_DATA_DIR, "secondary_problem_level_annotations_v1.csv")
 
-    def _REARRANGED_DATA(self) -> str:
-        
+    def _REARRANGED_DATA(self) -> str:   
         return os.path.join(self.UPDATED_DATA_DIR, "rearranged_data.csv")
 
+    def _EHR_STREAM(self) -> str:
+        return os.path.join(self.UPDATED_DATA_DIR, "ehr_stream.pkl")
+
+    def _TARGET_VALUES(self) -> str:
+        return os.path.join(self.UPDATED_DATA_DIR, "target_values.pkl")
+
+    def _X_TRAIN(self) -> str:
+        return os.path.join(self.UPDATED_DATA_DIR, "x_train.pkl")
+
+    def _X_TEST(self) -> str:
+        return os.path.join(self.UPDATED_DATA_DIR, "x_test.pkl")
+
+    def _Y_TRAIN(self) -> str:
+        return os.path.join(self.UPDATED_DATA_DIR, "y_train.pkl")
+
+    def _Y_TEST(self) -> str:
+        return os.path.join(self.UPDATED_DATA_DIR, "y_test.pkl")
+
+    def _X_VAL(self) -> str:
+        return os.path.join(self.UPDATED_DATA_DIR, "x_val.pkl")
+
+    def _Y_VAL(self) -> str:
+        return os.path.join(self.UPDATED_DATA_DIR, "y_val.pkl")
+
+    def _FILE_TO_GLOVE(self) -> str:
+        return os.path.join(self.UPDATED_DATA_DIR, "glove.6B.100d.txt")
+        
